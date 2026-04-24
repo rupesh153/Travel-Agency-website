@@ -1,8 +1,9 @@
-
+import HeroSlider from "../components/HeroSlider";
+import Testimonials from "../components/Testimonials";
 function Home() {
   return (
     <>
-      
+      <HeroSlider />
 
       <section className="section">
         <div className="section-title">
@@ -28,9 +29,15 @@ function Home() {
         </div>
       </section>
 
+      <Testimonials />
 
-
-     
+      <section className="section">
+        <div className="cta-box glass">
+          <h2>Ready For Your Dream Vacation?</h2>
+          <p>Book today and enjoy unforgettable travel experiences.</p>
+          <button className="primary-btn">Enquire Now</button>
+        </div>
+      </section>
     </>
   );
 }
