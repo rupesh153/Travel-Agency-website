@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import SearchBar from "../components/SearchBar";
 function Destinations() {
   const places = [
     {
@@ -37,7 +37,7 @@ function Destinations() {
         <h2>Top Destinations</h2>
       </div>
 
-   
+          <SearchBar data={places} setFiltered={setFiltered} />
 
       <div className="cards">
         {filtered.map((item, index) => (
