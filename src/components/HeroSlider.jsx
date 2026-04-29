@@ -1,22 +1,19 @@
 import { useEffect, useState } from "react";
-
+import { NavLink, Link } from "react-router-dom";
 function HeroSlider() {
   const slides = [
     {
-      image:
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+      image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
       title: "Discover Tropical Paradise",
       text: "Luxury beach holidays and crystal-clear waters.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+      image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
       title: "Explore Modern Cities",
       text: "Skyline adventures, shopping and nightlife.",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+      image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
       title: "Romantic European Escapes",
       text: "Create unforgettable memories abroad.",
     },
@@ -47,8 +44,13 @@ function HeroSlider() {
         <p>{slides[index].text}</p>
 
         <div className="hero-btns">
-          <button className="primary-btn">Book Now</button>
-          <button className="secondary-btn">Explore More</button>
+          <Link to="/booknow" className="primary-btn nav-book">
+            Book Now
+          </Link>
+          <Link to="/destinations" className="secondary-btn">
+        Explore More
+          </Link>
+         
         </div>
       </div>
     </section>
