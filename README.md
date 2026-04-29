@@ -22,7 +22,7 @@ VS Code – Code editor
 ▶️ How to Run Project
 Step 1: Download Project:git clone your-github-link
 
-Step 2: Open Project Folder:cd project-name
+Step 2: Open Project Folder: cd project-name
 
 Step 3: Install Dependencies: npm install
 
