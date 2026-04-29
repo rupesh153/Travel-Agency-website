@@ -2,6 +2,7 @@
 A Travel Agency Website is an online platform designed to help users explore travel destinations, book tour packages, and plan vacations easily.
 
 🛠️ Technology Used
+
 Frontend:
 
 HTML5 – Structure of website pages
@@ -13,6 +14,7 @@ JavaScript (ES6) – Interactive features
 React.js – Build user interface using components
 
 React Router DOM – Page navigation without reload
+
 Tools:
 
 Vite – Fast React project setup and development server
