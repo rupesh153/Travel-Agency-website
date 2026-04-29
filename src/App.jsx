@@ -8,7 +8,7 @@ import About from "./pages/About";
 import Destinations from "./pages/Destinations";
 import Packages from "./pages/Packages";
 import Contact from "./pages/Contact";
-
+import BookNow from "./pages/BookNow";
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +22,7 @@ function App() {
             <Route path="/destinations" element={<Destinations />} />
             <Route path="/packages" element={<Packages />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/booknow" element={<BookNow />} />
           </Routes>
         </main>
 

@@ -25,10 +25,10 @@ function Navbar() {
         <NavLink to="/destinations" onClick={closeMenu}>Destinations</NavLink>
         <NavLink to="/packages" onClick={closeMenu}>Packages</NavLink>
         <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
-
-        <button className="primary-btn nav-book">
-          Book Now
-        </button>
+<Link to="/booknow" className="primary-btn nav-book">
+  Book Now
+</Link>
+       
       </nav>
     </header>
   );
