@@ -54,18 +54,95 @@ button:hover{
   border-radius:20px;
 }
 
+
+
 /* Navbar */
 .navbar{
   position:sticky;
   top:0;
-  z-index:999;
+  z-index:9999;
   margin:15px;
-  padding:16px 28px;
+  padding:16px 24px;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
 
+.logo{
+  font-size:30px;
+  font-weight:700;
+}
+
+.menu-toggle{
+  display:none;
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:30px;
+  cursor:pointer;
+}
+
+/* Desktop */
+.nav-menu{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+    z-index:10001;
+  }
+
+  .nav-menu{
+    position:absolute;
+    top:80px;
+    left:15px;
+    right:15px;
+    width:auto;
+
+    display:none;
+    flex-direction:column;
+    gap:14px;
+
+    padding:22px;
+    border-radius:18px;
+
+    background:rgba(10,20,35,0.95);
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.35);
+    z-index:10000;
+  }
+
+  .nav-menu.show{
+    display:flex;
+    animation:slideDown 0.3s ease;
+  }
+
+  .nav-menu a,
+  .nav-book{
+    width:100%;
+    text-align:center;
+  }
+
+
+}
+
+/* Animation */
+@keyframes slideDown{
+  from{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
 .logo{
   font-size:30px;
   font-weight:700;
